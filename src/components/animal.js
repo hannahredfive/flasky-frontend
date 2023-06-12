@@ -11,7 +11,7 @@ const Animal = () => {
         <section className="Animal">
             <h3>Animal name: Millie</h3>
             <p>Species: Cat</p>
-            <img src="http://placekitten.com/g/200/200" alt="Furby"></img>
+            <img src="http://placekitten.com/g/200/300" alt="Furby"></img>
         </section>
     );
 };
