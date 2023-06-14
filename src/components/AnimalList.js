@@ -17,20 +17,28 @@ const AnimalList = () => {
         secondAnimal
     ]
 
-    const renderedAnimals = arrayOfAnimals.map(creature => (
-        <li>
-            <Animal 
-                name={creature.name} 
-                species={creature.species}
-            />
-        </li>
-    ))
+    // const renderedAnimals = arrayOfAnimals.map(creature => (
+    //     <li>
+    //         <Animal 
+    //             name={creature.name} 
+    //             species={creature.species}
+    //         />
+    //     </li>
+    // ))
+    // ^^^ This works, but embedding (below) is better and industry standard
 
     return (
         <section className="AnimalList">
             <h2>Animal List</h2>
             <ul className="AnimalList__list">
-                { renderedAnimals }
+                { arrayOfAnimals.map(creature => (
+                    <li>
+                        <Animal 
+                            name={creature.name} 
+                            species={creature.species}
+                        />
+                    </li> 
+                ))}
             </ul>
         </section>
     )
