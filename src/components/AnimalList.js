@@ -1,5 +1,6 @@
 import './AnimalList.css'
 import Animal from './animal';
+import PropTypes from 'prop-types';
 
 const AnimalList = ({ arrayOfAnimals }) => {
 
@@ -24,10 +25,11 @@ const AnimalList = ({ arrayOfAnimals }) => {
             <ul className="AnimalList__list">
                 { 
                     arrayOfAnimals.map(creature => (
-                        <li>
+                        <li key={creature.id}>
                             <Animal 
                                 name={ creature.name } 
                                 species={ creature.species }
+                                photo={ creature.photo }
                             />
                             {/* <Animal 
                                 {...creature}
@@ -69,5 +71,17 @@ const AnimalList = ({ arrayOfAnimals }) => {
         </section>
     )
 };
+
+AnimalList.propTypes = {
+    arrayOfAnimals: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            species: PropTypes.string,
+            adopted: PropTypes.bool,
+            age: PropTypes.number,
+            photo: PropTypes.string
+        })
+    )
+}
 
 export default AnimalList

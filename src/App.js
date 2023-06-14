@@ -6,20 +6,29 @@ import AnimalList from './components/AnimalList';
 
 const arrayOfAnimals = [
   {
-      name: "Violet",
-      species: "Pitbull Mix"  
+    id: 101,  
+    name: "Violet",
+    species: "Pitbull Mix"  
   },
   {
-      name: "Norman",
-      species: "Puppy"
+    id: 102,
+    name: "Norman",
+    species: "Puppy",
+    photo: "https://cdn.akc.org/content/hero/pyr_pup_hero.jpg"
   },
   {
-      name: "Furby",
-      species: "Cat"
+    id: 103,
+    name: "Furby",
+    species: "Cat"
   },
   {
-      name: "Millie",
-      species: "Cat"
+    id: 104,
+    name: "Millie",
+    species: "Cat"
+  },
+  {
+    id: 105,
+    name: "Millie"
   }
 ]
 
