@@ -15,6 +15,10 @@ const AnimalList = () => {
         {
             name: "Furby",
             species: "Cat"
+        },
+        {
+            name: "Millie",
+            species: "Cat"
         }
     ]
 
@@ -43,6 +47,25 @@ const AnimalList = () => {
                     )) 
                 }
             </ul>
+
+            {/*
+            The above could be written as below because if you use {} it needs to be an expression that RETURNS something:
+            <ul className="AnimalList__list">
+                { 
+                    arrayOfAnimals.map(creature => {
+                        return (
+                            <li>
+                                <Animal 
+                                    name={ creature.name } 
+                                    species={ creature.species }
+                                />
+                            </li>
+                        )
+                    }) 
+                }
+            </ul> 
+             */}
+            
         </section>
     )
 };
