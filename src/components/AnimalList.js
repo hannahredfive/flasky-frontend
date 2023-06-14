@@ -2,19 +2,20 @@ import './AnimalList.css'
 import Animal from './animal';
 
 const AnimalList = () => {
-    const firstAnimal = {
-        name: "Violet",
-        species: "Pitbull Mix"
-    }
-
-    const secondAnimal = {
-        name: "Norman",
-        species: "Puppy"
-    }
 
     const arrayOfAnimals = [
-        firstAnimal,
-        secondAnimal
+        {
+            name: "Violet",
+            species: "Pitbull Mix"  
+        },
+        {
+            name: "Norman",
+            species: "Puppy"
+        },
+        {
+            name: "Furby",
+            species: "Cat"
+        }
     ]
 
     // const renderedAnimals = arrayOfAnimals.map(creature => (
