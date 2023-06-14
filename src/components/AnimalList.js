@@ -1,26 +1,12 @@
 import './AnimalList.css'
 import Animal from './animal';
 
-const AnimalList = () => {
+const AnimalList = ({ arrayOfAnimals }) => {
 
-    const arrayOfAnimals = [
-        {
-            name: "Violet",
-            species: "Pitbull Mix"  
-        },
-        {
-            name: "Norman",
-            species: "Puppy"
-        },
-        {
-            name: "Furby",
-            species: "Cat"
-        },
-        {
-            name: "Millie",
-            species: "Cat"
-        }
-    ]
+    // const { arrayOfAnimals } = props;
+    // const arrayOfAnimals = props.arrayOfAnimals;
+    // ^^^ BOTH WORK, the top is the shorter way to say the same thing of these two
+    // Both can be replaced with line 4 where we pass set Props to being the destructure arrayOfAnimals
 
     // const renderedAnimals = arrayOfAnimals.map(creature => (
     //     <li>
@@ -43,8 +29,22 @@ const AnimalList = () => {
                                 name={ creature.name } 
                                 species={ creature.species }
                             />
+                            {/* <Animal 
+                                {...creature}
+                            /> 
+                            THIS WORKS THE SAME, BUT IS VERY CONFUSING FOR PEOPLE TO READ*/}
+                            
                         </li> 
                     )) 
+                    // arrayOfAnimals.map(({ name, species }) => (
+                    //     <li>
+                    //         <Animal 
+                    //             name={ name } 
+                    //             species={ species }
+                    //         />
+                    //     </li> 
+                    // ))
+                    // This works too! BUT if you added more key value pairs to the 
                 }
             </ul>
 
