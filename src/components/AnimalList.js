@@ -31,14 +31,16 @@ const AnimalList = () => {
         <section className="AnimalList">
             <h2>Animal List</h2>
             <ul className="AnimalList__list">
-                { arrayOfAnimals.map(creature => (
-                    <li>
-                        <Animal 
-                            name={creature.name} 
-                            species={creature.species}
-                        />
-                    </li> 
-                ))}
+                { 
+                    arrayOfAnimals.map(creature => (
+                        <li>
+                            <Animal 
+                                name={ creature.name } 
+                                species={ creature.species }
+                            />
+                        </li> 
+                    )) 
+                }
             </ul>
         </section>
     )
