@@ -1,3 +1,16 @@
 .Animal {
     text-align: center;
 }
+
+img {
+    width: 300px;
+}
+
+.bookmarked img {
+    width: 300px;
+}
+
+.bookmarked {
+    background-color: rgb(113, 59, 132);
+    color: white;
+}

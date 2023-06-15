@@ -6,15 +6,21 @@ import AnimalList from './components/AnimalList';
 
 const arrayOfAnimals = [
   {
-    id: 101,  
-    name: "Violet",
-    species: "Pitbull Mix"  
+    id: 106,
+    name: "Paprika and Braven",
+    species: "Kittens",
+    photo: "https://www.felinefriendsofsammamish.com/app/pet/img/000359-008.jpg"
   },
   {
     id: 102,
     name: "Norman",
     species: "Puppy",
     photo: "https://cdn.akc.org/content/hero/pyr_pup_hero.jpg"
+  },
+  {
+    id: 101,  
+    name: "Violet",
+    species: "Pitbull Mix"
   },
   {
     id: 103,
